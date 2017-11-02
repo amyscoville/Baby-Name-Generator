@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Quicksand');
+    </style>
+    <title>Baby Name Generator</title>
+</head>
+<body>
+    <h1>Baby Name Generator</h1>
+    <div id="user-input">
+        <form>
+            <label>What is your last name?
+                <input id="last-name" type="text" name="lastname">
+            </label>    
+            <br>
+            <label class="boy-or-girl">Boy Name:
+                <input id='boy-name' type="radio" name="gender" onclick="changeBackground()">
+            </label>
+            <label class="boy-or-girl">Girl Name:
+                <input id='girl-name' type="radio" name="gender" onclick="changeBackground()">
+        </form>
+        <br>
+    </div>
+    <div id="gen-name">    
+        <button id="gen-name-button" onclick="genName()">Generate Name</button>
+    </div>
+    <h2 id="baby-name"></h2>
+
+    <script src="names.js"></script>
+    <script src="main.js"></script> 
+</body>
+</html>
